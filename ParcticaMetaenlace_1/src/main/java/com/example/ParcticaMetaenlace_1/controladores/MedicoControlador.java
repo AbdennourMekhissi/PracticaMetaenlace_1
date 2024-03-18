@@ -1,7 +1,7 @@
 package com.example.ParcticaMetaenlace_1.controladores;
 
 import com.example.ParcticaMetaenlace_1.dto.MedicoDTO;
-import com.example.ParcticaMetaenlace_1.servicios.MedicoServicio;
+import com.example.ParcticaMetaenlace_1.interfaces.MedicoInterfaz;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,30 +12,30 @@ import java.util.List;
 public class MedicoControlador {
 
     @Autowired
-    private MedicoServicio medicoServicio;
+    private MedicoInterfaz medicoInterfaz;
 
     @GetMapping
     public List<MedicoDTO> getAllMedicos() {
-        return medicoServicio.getAllMedicos();
+        return medicoInterfaz.getAllMedicos();
     }
 
     @GetMapping("/{id}")
     public MedicoDTO getMedicoById(@PathVariable Long id) {
-        return medicoServicio.getMedicoById(id);
+        return medicoInterfaz.getMedicoById(id);
     }
 
     @PostMapping
     public MedicoDTO createMedico(@RequestBody MedicoDTO medicoDTO) {
-        return medicoServicio.saveMedico(medicoDTO);
+        return medicoInterfaz.saveMedico(medicoDTO);
     }
 
     @PutMapping("/{id}")
     public MedicoDTO updateMedico(@PathVariable Long id, @RequestBody MedicoDTO medicoDTO) {
-        return medicoServicio.updateMedico(id, medicoDTO);
+        return medicoInterfaz.updateMedico(id, medicoDTO);
     }
 
     @DeleteMapping("/{id}")
     public void deleteMedico(@PathVariable Long id) {
-        medicoServicio.deleteMedico(id);
+        medicoInterfaz.deleteMedico(id);
     }
 }

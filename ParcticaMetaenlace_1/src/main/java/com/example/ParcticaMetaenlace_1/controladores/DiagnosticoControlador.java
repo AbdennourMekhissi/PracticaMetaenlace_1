@@ -1,7 +1,7 @@
 package com.example.ParcticaMetaenlace_1.controladores;
 
 import com.example.ParcticaMetaenlace_1.dto.DiagnosticoDTO;
-import com.example.ParcticaMetaenlace_1.servicios.DiagnosticoServicio;
+import com.example.ParcticaMetaenlace_1.interfaces.DiagnosticoInterfaz;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,30 +12,30 @@ import java.util.List;
 public class DiagnosticoControlador {
 
     @Autowired
-    private DiagnosticoServicio diagnosticoServicio;
+    private DiagnosticoInterfaz diagnosticoInterfaz;
 
     @GetMapping
     public List<DiagnosticoDTO> getAllDiagnosticos() {
-        return diagnosticoServicio.getAllDiagnosticos();
+        return diagnosticoInterfaz.getAllDiagnosticos();
     }
 
     @GetMapping("/{id}")
     public DiagnosticoDTO getDiagnosticoById(@PathVariable Long id) {
-        return diagnosticoServicio.getDiagnosticoById(id);
+        return diagnosticoInterfaz.getDiagnosticoById(id);
     }
 
     @PostMapping
     public DiagnosticoDTO createDiagnostico(@RequestBody DiagnosticoDTO diagnosticoDTO) {
-        return diagnosticoServicio.saveDiagnostico(diagnosticoDTO);
+        return diagnosticoInterfaz.saveDiagnostico(diagnosticoDTO);
     }
 
     @PutMapping("/{id}")
     public DiagnosticoDTO updateDiagnostico(@PathVariable Long id, @RequestBody DiagnosticoDTO diagnosticoDTO) {
-        return diagnosticoServicio.updateDiagnostico(id, diagnosticoDTO);
+        return diagnosticoInterfaz.updateDiagnostico(id, diagnosticoDTO);
     }
 
     @DeleteMapping("/{id}")
     public void deleteDiagnostico(@PathVariable Long id) {
-        diagnosticoServicio.deleteDiagnostico(id);
+        diagnosticoInterfaz.deleteDiagnostico(id);
     }
 }

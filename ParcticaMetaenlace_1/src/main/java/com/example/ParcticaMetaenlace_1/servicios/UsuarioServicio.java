@@ -1,6 +1,7 @@
 package com.example.ParcticaMetaenlace_1.servicios;
 
 import com.example.ParcticaMetaenlace_1.dto.UsuarioDTO;
+import com.example.ParcticaMetaenlace_1.interfaces.UsuarioInterfaz;
 import com.example.ParcticaMetaenlace_1.mapper.UsuarioMapper;
 import com.example.ParcticaMetaenlace_1.modelo.Usuario;
 import com.example.ParcticaMetaenlace_1.repositorios.UsuarioRepositorio;
@@ -10,7 +11,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class UsuarioServicio {
+public class UsuarioServicio implements UsuarioInterfaz {
 
     @Autowired
     private UsuarioRepositorio usuarioRepositorio;

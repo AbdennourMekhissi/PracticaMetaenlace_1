@@ -2,6 +2,7 @@ package com.example.ParcticaMetaenlace_1.servicios;
 
 import com.example.ParcticaMetaenlace_1.dto.MedicoDTO;
 
+import com.example.ParcticaMetaenlace_1.interfaces.MedicoInterfaz;
 import com.example.ParcticaMetaenlace_1.mapper.MedicoMapper;
 import com.example.ParcticaMetaenlace_1.modelo.Medico;
 import com.example.ParcticaMetaenlace_1.repositorios.MedicoRepositorio;
@@ -11,7 +12,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class MedicoServicio {
+public class MedicoServicio implements MedicoInterfaz {
 
     @Autowired
     private MedicoRepositorio medicoRepositorio;

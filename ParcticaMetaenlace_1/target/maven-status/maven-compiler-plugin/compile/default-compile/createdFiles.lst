@@ -1,5 +1,6 @@
 com\example\ParcticaMetaenlace_1\controladores\CitaControlador.class
 com\example\ParcticaMetaenlace_1\controladores\MedicoControlador.class
+com\example\ParcticaMetaenlace_1\interfaces\UsuarioInterfaz.class
 com\example\ParcticaMetaenlace_1\mapper\PacienteMapper.class
 com\example\ParcticaMetaenlace_1\controladores\UsuarioControlador.class
 com\example\ParcticaMetaenlace_1\ParcticaMetaenlace1Application.class
@@ -7,10 +8,12 @@ com\example\ParcticaMetaenlace_1\swagger\SwaggerConfiguracion.class
 com\example\ParcticaMetaenlace_1\servicios\CitaServicio.class
 com\example\ParcticaMetaenlace_1\repositorios\MedicoRepositorio.class
 com\example\ParcticaMetaenlace_1\controladores\DiagnosticoControlador.class
+com\example\ParcticaMetaenlace_1\interfaces\DiagnosticoInterfaz.class
 com\example\ParcticaMetaenlace_1\dto\PacienteDTO.class
 com\example\ParcticaMetaenlace_1\repositorios\UsuarioRepositorio.class
 com\example\ParcticaMetaenlace_1\dto\CitaDTO.class
 com\example\ParcticaMetaenlace_1\mapper\CitaMapper.class
+com\example\ParcticaMetaenlace_1\interfaces\MedicoInterfaz.class
 com\example\ParcticaMetaenlace_1\mapper\MedicoMapper.class
 com\example\ParcticaMetaenlace_1\repositorios\CitaRepositorio.class
 com\example\ParcticaMetaenlace_1\controladores\PacienteControlador.class
@@ -25,7 +28,9 @@ com\example\ParcticaMetaenlace_1\repositorios\PacienteRepositorio.class
 com\example\ParcticaMetaenlace_1\dto\MedicoDTO.class
 com\example\ParcticaMetaenlace_1\mapper\PacienteMapperImpl.class
 com\example\ParcticaMetaenlace_1\servicios\MedicoServicio.class
+com\example\ParcticaMetaenlace_1\interfaces\PacienteInterfaz.class
 com\example\ParcticaMetaenlace_1\servicios\PacienteServicio.class
+com\example\ParcticaMetaenlace_1\interfaces\CitaInterfaz.class
 com\example\ParcticaMetaenlace_1\modelo\Cita.class
 com\example\ParcticaMetaenlace_1\servicios\UsuarioServicio.class
 com\example\ParcticaMetaenlace_1\mapper\UsuarioMapper.class

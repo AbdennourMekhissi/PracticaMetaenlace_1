@@ -1,6 +1,7 @@
 package com.example.ParcticaMetaenlace_1.servicios;
 
 import com.example.ParcticaMetaenlace_1.dto.CitaDTO;
+import com.example.ParcticaMetaenlace_1.interfaces.CitaInterfaz;
 import com.example.ParcticaMetaenlace_1.mapper.CitaMapper;
 import com.example.ParcticaMetaenlace_1.modelo.Cita;
 import com.example.ParcticaMetaenlace_1.repositorios.CitaRepositorio;
@@ -10,7 +11,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class CitaServicio {
+public class CitaServicio implements CitaInterfaz {
 
     private final CitaRepositorio citaRepositorio;
     private final CitaMapper citaMapper;

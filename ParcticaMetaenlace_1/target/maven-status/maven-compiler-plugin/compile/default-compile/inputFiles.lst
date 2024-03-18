@@ -8,6 +8,11 @@ C:\Users\Abdennour\IdeaProjects\ParcticaMetaenlace_1\src\main\java\com\example\P
 C:\Users\Abdennour\IdeaProjects\ParcticaMetaenlace_1\src\main\java\com\example\ParcticaMetaenlace_1\dto\MedicoDTO.java
 C:\Users\Abdennour\IdeaProjects\ParcticaMetaenlace_1\src\main\java\com\example\ParcticaMetaenlace_1\dto\PacienteDTO.java
 C:\Users\Abdennour\IdeaProjects\ParcticaMetaenlace_1\src\main\java\com\example\ParcticaMetaenlace_1\dto\UsuarioDTO.java
+C:\Users\Abdennour\IdeaProjects\ParcticaMetaenlace_1\src\main\java\com\example\ParcticaMetaenlace_1\interfaces\CitaInterfaz.java
+C:\Users\Abdennour\IdeaProjects\ParcticaMetaenlace_1\src\main\java\com\example\ParcticaMetaenlace_1\interfaces\DiagnosticoInterfaz.java
+C:\Users\Abdennour\IdeaProjects\ParcticaMetaenlace_1\src\main\java\com\example\ParcticaMetaenlace_1\interfaces\MedicoInterfaz.java
+C:\Users\Abdennour\IdeaProjects\ParcticaMetaenlace_1\src\main\java\com\example\ParcticaMetaenlace_1\interfaces\PacienteInterfaz.java
+C:\Users\Abdennour\IdeaProjects\ParcticaMetaenlace_1\src\main\java\com\example\ParcticaMetaenlace_1\interfaces\UsuarioInterfaz.java
 C:\Users\Abdennour\IdeaProjects\ParcticaMetaenlace_1\src\main\java\com\example\ParcticaMetaenlace_1\mapper\CitaMapper.java
 C:\Users\Abdennour\IdeaProjects\ParcticaMetaenlace_1\src\main\java\com\example\ParcticaMetaenlace_1\mapper\DiagnosticoMapper.java
 C:\Users\Abdennour\IdeaProjects\ParcticaMetaenlace_1\src\main\java\com\example\ParcticaMetaenlace_1\mapper\MedicoMapper.java
